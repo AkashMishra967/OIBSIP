@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your work and achieve your goals.</p>
+        </header>
+
+        <!-- Task Input -->
+        <section class="input-section">
+
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+
+            <button id="addBtn">+ Add Task</button>
+
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h2 id="totalCount">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="pendingCount">0</h2>
+                <p>Pending</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedCount">0</h2>
+                <p>Completed</p>
+            </div>
+
+        </section>
+
+        <!-- Pending Tasks -->
+        <section class="task-section">
+
+            <h2>Pending Tasks</h2>
+
+            <div id="pendingTasks" class="task-list">
+                <p class="empty-message">No pending tasks found.</p>
+            </div>
+
+        </section>
+
+        <!-- Completed Tasks -->
+        <section class="task-section">
+
+            <h2>Completed Tasks</h2>
+
+            <div id="completedTasks" class="task-list">
+                <p class="empty-message">No completed tasks found.</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Stay focused. Stay productive.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
